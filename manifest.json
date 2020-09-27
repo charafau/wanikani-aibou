@@ -1,0 +1,27 @@
+{
+    "name": "WaniKani Aibou",
+    "version": "1.0",
+    "description": "WaniKani.com notfier and enhancements",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "WaniKani Aibou",
+        "default_icon": "/img/icon.png",
+        "default_popup": "/html/home.html"
+    },
+    "icons": {
+        "128": "/img/icon.png"
+    },
+    "permissions": [
+        "*://*.wanikani.com/",
+        "notifications",
+        "storage",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": [
+            "/js/background.js",
+            "/js/api.js"
+        ]
+    }
+}

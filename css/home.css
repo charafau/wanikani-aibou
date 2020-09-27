@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(51, 51, 51);
+}
+
+.ex4 .parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.parent {
+  min-width: 220px;
+  min-height: 180px;
+  padding: 8px;
+}
+
+.profile {
+  color: #e5e5e5;
+  font: 1rem sans-serif;
+  overflow: hidden;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  background-image: url("/img/avatar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 lem 0 -5px;
+  float: left;
+  margin-right: 12px;
+}
+
+.info {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.main {
+  margin-top: 16px;
+  color: #ffffff;
+  font-size: 1.3em;
+  overflow: hidden;
+  width: 215px;
+  text-align: center;
+}
+
+.lessons {
+  width: 105px;
+  height: 60px;
+  background-color: rgb(246, 0, 170);
+  border-radius: 5px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews {
+  width: 105px;
+  height: 60px;
+  background-color: rgb(82, 142, 248);
+  border-radius: 5px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next {
+  padding-top: 16px;
+  color: #ffffff;
+  font-size: 1.2em;
+}
