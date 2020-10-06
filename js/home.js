@@ -8,6 +8,9 @@ window.onload = async () => {
     document.getElementById("level").innerHTML = `Level ${user.level}`;
   }
 
+  let reviews =  await controller.fetchReviews();
+  if(reviews){
+  }
 
   
 };

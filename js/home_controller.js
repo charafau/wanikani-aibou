@@ -7,12 +7,17 @@ class HomeController {
 
   loadUserData() {
     let settings = this.#storage.loadSettings();
-    if(settings){
+    if (settings) {
       return settings;
     }
   }
 
-  async fetchUserSummary() {
+  async fetchReviews() {
+    let settings = this.#storage.loadSettings();
+    if (settings && settings.token) {
+      let api = new Api(settings.token);
+      return api.fetchSummaryData();
+    }
     // return this.#api.fetchSummaryData();
   }
 }
