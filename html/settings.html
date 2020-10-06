@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/css/settings.css" rel="stylesheet" type="text/css" />
+
+    <script src="/js/models.js"></script>
+    <script src="/js/storage.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/storage_controller.js"></script>
+    <script src="/js/settings.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="top">
+        <a href="/html/home.html">
+          <img id="back" src="/img/arrow_back.png" /> </a
+        >Settings
+      </div>
+
+      <div class="middle">
+        <ul>
+          <li>Api Token</li>
+          <li><input id="apiToken" type="text" size="30" /></li>
+          <li class="spaced">Data refresh interval</li>
+          <li>
+            <select id="refreshInterval">
+              <option value="300000">5min</option>
+              <option value="900000">15min</option>
+              <option value="1800000">30min</option>
+              <option value="3600000">1h</option>
+              <option value="7200000">2h</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <a id="save" href="#">
+        <div class="linkPanel">SAVE</div>
+      </a>
+    </div>
+  </body>
+</html>

@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <link href="/css/home.css" rel="stylesheet" type="text/css" />
+    <script src="/js/models.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/storage.js"></script>
+    <script src="/js/home_controller.js"></script>
+    <script src="/js/home.js"></script>
   </head>
 
   <body>
+    <a href="/html/settings.html">
+      <div class="settings" id="settings"></div>
+    </a>
     <div class="parent">
       <header class="profile">
         <div class="avatar"></div>
 
-        <div class="info">Charafau</div>
-        <div>Level 30 | Lifetime</div>
+        <div id="username" class="info">Your name</div>
+        <div id="level">Level -</div>
       </header>
       <main class="main">
         <div class="lessons">
@@ -23,7 +31,7 @@
           Reviews
         </div>
       </main>
-      <footer class="next" >Next review in: 120min</footer>
+      <footer class="next">Next review in: 120min</footer>
     </div>
   </body>
 </html>

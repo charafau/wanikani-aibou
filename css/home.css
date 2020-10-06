@@ -72,3 +72,14 @@ body {
   color: #ffffff;
   font-size: 1.2em;
 }
+
+.settings {
+  width: 20px;
+  height: 20px;
+  background-image: url("/img/settings.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 12px;
+  padding: 4px;
+}

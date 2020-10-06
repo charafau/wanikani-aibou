@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(51, 51, 51);
+}
+
+#back {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+.content {
+  width: 220px;
+  color: #e5e5e5;
+  font: 1rem sans-serif;
+  overflow: hidden;
+  margin-left: 4px;
+}
+
+ul li {
+  list-style-type: none;
+  line-height: 20px;
+}
+li.spaced {
+  padding-top: 8px;
+}
+
+input,
+select {
+  font-family: inherit;
+  font-size: 15px;
+}
+input#apiToken {
+  width: 210px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.middle > ul {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.top {
+  font: 1.4rem sans-serif;
+  overflow: hidden;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+div.linkPanel {
+  color: rgb(51, 51, 51);
+  background-color: rgb(246, 0, 170);
+  min-height: 10%;
+  text-align: center;
+  font: 1rem sans-serif;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 6px;
+}
+div.linkPanel:hover {
+  background-color: rgb(206, 0, 170);
+  transition: 0.5s;
+}
+
+a:link {
+  text-decoration: none;
+}
